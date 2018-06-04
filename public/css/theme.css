@@ -1,0 +1,709 @@
+/** ----------------------------------------------------------
+ *
+ * Colours...
+ *
+ *      #333333             - body
+ *      #469EE6             - blue
+ *      #A9F043             - green Interactive
+ *      #81CA2B             - green hover
+ *
+ * ------------------------------------------------------- */
+
+@font-face {
+    font-family: 'Sonder';
+    src: url('../webfonts/SonderSans-BlackRough.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/*=== Trial ===*/
+
+.trial-banner {
+    position: fixed;
+    z-index: 15;
+    height: 42px;
+    width: 100%;
+    background-color: #469EE6;
+    color: white;
+}
+
+.trial-banner-inner {
+    text-align: center;
+    padding-top: 8px;
+}
+
+.trial-banner-inner p, 
+.trial-banner-inner span {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: 700;
+    display: inline-block;
+}
+
+.trial-banner-inner p {
+    font-style: italic;
+}
+
+.trial-banner-inner span {
+    padding: 4px;
+    background: #fff;
+    padding-left: 7px;
+    margin-left: 8px;
+    color: #469EE6;
+    border-radius: 4px;
+}
+
+/*=== Page Banner ===*/
+
+.page-banner {
+    position: relative;
+}
+
+.page-banner h2 {
+    z-index: 5;
+    position: absolute;
+    top: 240px;
+    text-align: center;
+    font-size: 116px;
+    font-weight: 700;
+    letter-spacing: 20px;
+    text-transform: uppercase;
+    margin: 0 auto;
+    color: white;
+    width: 100%;
+    font-family: 'Sonder';
+}
+
+.page-banner-inner {
+    z-index: 1;
+    height: 300px;
+    background-image: url('../images/member-banner.jpg');
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-size: 100px;
+    overflow: hidden;
+}
+
+.banner-heading {
+    display: inline-block;
+    position: absolute;
+    height: auto;
+    top: 40%;
+    left: 50%;
+    text-align: center;
+    width: 100%;
+    z-index: 15;
+    transform: translate(-50%, -40%);
+}
+
+.banner-promo-overlay {
+    background: black;
+    height: 2000px;
+    width: 100%;
+    z-index: 10;
+    position: absolute;
+    opacity: 0.5;
+}
+
+.banner-promo {
+    z-index: 1;
+    position: relative;
+}
+
+.banner-heading h1 {
+    text-align: center;
+    width: 50%;
+    color: #fff;
+    margin: 0 auto;
+    padding: 50px;
+    font-size: 120px;
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: 140px;
+    border: none;
+    font-family: 'Sonder';
+}
+
+.banner-action {
+    background: #A9F043;
+    padding: 14px;
+    font-size: 16px;
+    border-radius: 8px;
+    width: 180px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 0 auto;
+}
+
+.banner-action:hover {
+    background: #81CA2B;
+    font-style: italic;
+}
+
+.banner-image {
+   overflow: hidden;
+}
+
+/*=== Timetable ===*/
+
+.times {
+    float: left;
+    padding-top: 60px;
+    margin: 0 !important;
+    width: 10%;
+}
+
+.times, .times li {
+    list-style-type: none !important;
+}
+
+.times li {
+    height: 60px;
+    margin: 0;
+    line-height: 60px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: right;
+    padding-right: 24px;
+    border-right: 2px solid grey !important;
+}
+
+.table-container {
+    float: left;
+    width: 90%;
+}
+
+.class-table {
+    border: none !important;
+    width: 100%;
+}
+
+.class-table td, 
+.class-table th {
+    border: none !important;
+    padding: 0 !important;
+    height: 60px;
+    line-height: 60px;
+    font-size: 20px;
+}
+
+.class-table th {
+    text-transform: uppercase;
+    color: #469EE6;
+}
+
+/*=== Memberships ===*/
+
+.member-plan {
+    float: left;
+    width: 25%;
+    padding-bottom: 24px;
+}
+
+.member-plan-inner {
+    padding: 12px;
+    text-align: center;
+}
+
+.member-plan h2 {
+    font-size: 30px;
+    letter-spacing: 4px;
+    margin-bottom: 24px;
+    font-style: italic;
+}
+
+.member-table {
+    width: 100%;
+    margin-bottom: 40px !important;
+}
+
+.member-table, .member-table td {
+    border: 2px solid #ECECEC !important;
+}
+
+.member-table td {
+    height: 40px;
+    vertical-align: middle !important;
+    text-transform: uppercase;
+    color: #469EE6;
+}
+
+.member-tick {
+    background: url(../images/done.png);
+    background-size: 24px 24px;
+    height: 24px;
+    width: 24px;
+}
+
+.price {
+    width: 160px;
+    border-radius: 10px;
+    background-color: #A9F043;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    padding-top: 28px;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.price:hover {
+    background-color: #81CA2B;
+}
+
+.price span {
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Sonder';
+}
+
+.price p {
+    font-style: italic;
+    text-transform: uppercase;
+    font-size: 16px;
+    color: #fff;
+    margin: 0;
+    margin-top: 8px;
+}
+
+/*=== Contact ===*/
+
+.enquiry:first-child,
+.enquiry:last-child  {
+    background-color: #ECECEC;
+}
+
+.enquiry:nth-child(2) {
+    background-color: #F3F3F3;
+}
+
+.enquiry {
+    width: 33%;
+    float: left;
+    height: 300px;
+}
+
+.enquiry-inner h3 {
+    text-align: center;
+    padding-bottom: 24px;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+.enquiry-inner {
+    padding: 32px;
+}
+
+#map {
+    height: 400px;
+    width: 100%;
+    background: #A9F043;
+}
+
+.enquiry-button {
+    Padding: 20px;
+    width: 156px;
+    font-size: 16px;
+    letter-spacing: 2px;
+    margin: 0 auto;
+    background-color: #A9F043;
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+    text-transform: uppercase;
+    border-radius: 8px;
+}
+
+.enquiry-button:hover {
+    background-color: #81CA2B;
+    font-style: italic;
+    -moz-transition: 0.3s;
+	-webkit-transition: 0.3s;
+	transition: 0.3s;
+}
+
+.modal fieldset {
+    padding-top: 24px;
+}
+
+/*=== Classes ===*/
+
+.classes {
+    background-color: #469EE6;
+    overflow: auto;
+    clear: both;
+}
+
+.classes h2 {
+    letter-spacing: 8px;
+    font-style: italic;
+    text-align: center;
+    color: #fff;
+    padding-bottom: 48px;
+    font-size: 56px;
+}
+
+.class-card {
+    float: left;
+    width: 25%;
+}
+
+.class-card-inner {
+    background-color: #fff;
+    margin: 0 auto;
+    padding: 12px;
+    margin: 12px;
+    border-radius: 30px;
+}
+
+.class-card h3 {
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 12px;
+    letter-spacing: 2px;
+    font-size: 18px;
+}
+
+.card-image {
+    background: #A9F043;
+    margin: 0 auto;
+    width: 140px;
+    height: 140px;
+    background-position: center;
+    background-size: 140px 140px !important;
+}
+
+.class-card-inner:hover {
+    -moz-transition: 0.3s;
+	-webkit-transition: 0.3s;
+	transition: 0.3s;
+}
+.class-card-inner:hover .card-image {
+    background-size: 150px 150px !important;
+}
+.class-card-inner:hover h3 {
+    font-style: italic;
+    color: #A9F043 !important;
+}
+
+.class-icon {
+    width: 40px;
+    height: 40px;
+    margin: 0 auto;
+    margin-top: 10px;
+    background-position: center;
+    background-size: 40px 40px !important;
+}
+
+/*=== Modals ===*/
+
+.modal-container {
+    display: none;
+    z-index: 6;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    -webkit-animation-name: animate;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animate;
+    animation-duration: 0.4s;
+}
+
+.modal-container {
+    background: rgba(0,0,0,.5);
+    position: fixed;
+    top: 0;
+}
+
+.modal {
+    border-radius: 8px;
+    width: 400px;
+    height: auto;
+    background-color: #fff;
+    display: inline-block;
+    margin-top: 200px;
+    text-align: center;
+    padding: 24px;
+}
+
+.modal-medium {
+    margin-top: 100px;
+    width: 600px;
+    height: 500px;
+}
+
+.modal-large {
+    width: 80%;
+    height: 600px;
+    margin-top: 200px;
+}
+
+.modal-inner {
+    display: inline-block;
+    padding-top: 40px;
+}
+
+.modal h2, .modal h4 {
+    font-family: 'Sonder';
+    color: #A9F043;
+}
+
+.modal h2 {
+    font-size: 36px;
+}
+
+.modal h4 {
+    font-size: 20px;
+}
+
+.modal-content p {
+    text-transform: uppercase;
+    font-size: 16px;
+    text-align: left;
+    padding-left: 24px;
+}
+
+.modal-content {
+    float: left;
+    width: 75%;
+    padding-top: 24px;
+}
+
+.modal-image {
+    float: left;
+    width: 100px;
+    height: 100px;
+    margin-top: 24px;
+    background: #A9F043;
+    background-size: 100px !important;
+}
+
+@-webkit-keyframes animate {
+    from {opacity:0} 
+    to {opacity:1}
+}
+
+@keyframes animate {
+    from {opacity:0}
+    to {opacity:1}
+}
+
+.modal-button {
+    cursor: pointer;
+}
+
+/*== Subscribe ==*/
+
+.subscribe {
+    padding-top: 60px;
+    padding-bottom: 80px;
+}
+
+.subscribe p {
+    font-style: italic;
+}
+
+.subscribe form {
+    width: 430px;
+    margin: 0 auto;
+}
+.subscribe fieldset {
+    margin: 0 auto;
+    width: 100%;
+}
+
+.subscribe .field label {
+    display: none;
+}
+
+.subscribe form input.text {
+    border-radius: 4px;
+    border: 2px solid #A9F043;
+}
+
+/*=== Class Images ===*/
+
+.spin-image {
+    background: url(../images/Classes/spin.png);
+}
+
+.yoga-image {
+    background: url(../images/Classes/yoga.png);
+}
+
+.boxing-image {
+    background: url(../images/Classes/boxing.png);
+}
+
+.wod-image {
+    background: url(../images/Classes/wod.png);
+}
+
+.boxfit-image {
+    background: url(../images/Classes/boxfit.png);
+}
+
+.kids-image {
+    background: url(../images/Classes/kids.png);
+}
+
+.core-image {
+    background: url(../images/Classes/core.png);
+}
+
+.bats-image {
+    background: url(../images/Classes/bats.png);
+}
+
+.bodyblast-image {
+    background: url(../images/Classes/bodyblast.png);
+}
+
+.bootcamp-image {
+    background: url(../images/Classes/bootcamp.png);
+}
+
+.kickboxing-image {
+    background: url(../images/Classes/kickboxing.png);
+}
+
+.olympic-image {
+    background: url(../images/Classes/lifting.png);
+}
+
+/*=== Responsive ===*/
+
+@media only screen and (max-width: 1200px) {
+
+    .page-banner h2 {
+        font-size: 90px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+
+    .banner-heading h1 {
+        font-size: 90px;
+        line-height: 100px;
+    }
+
+}
+
+@media only screen and (max-width: 960px) {
+
+    .page-banner h2 {
+        font-size: 60px;
+        letter-spacing: 10px;
+    }
+
+    .page-banner-inner {
+        height: auto;
+    }
+
+    .class-card {
+        width: 33%;
+    }
+
+    .table-container {
+        overflow-x: scroll;
+    }
+
+    .class-table {
+        width: 1200px;
+    }
+
+    .table-container {
+        width: 80%;
+    }
+
+    .times {
+        width: 20%;
+    }
+
+    .enquiry {
+        width: 100%;
+        height: auto;
+    }
+
+    .member-plan {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 720px) {
+
+    .page-banner h2 {
+        font-size: 40px;
+    }
+
+    .classes h2 {
+        font-size: 30px;
+        letter-spacing: 4px;
+        padding-bottom: 24px;
+    }
+
+    .class-card {
+        width: 50%;
+    }
+
+    .banner-heading h1 {
+        font-size: 60px;
+        line-height: 70px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+
+    .page-banner h2 {
+        font-size: 20px;
+    }
+
+    .banner-heading h1 {
+        font-size: 50px;
+        line-height: 60px;
+        padding: 10px;
+        width: 80%;
+    }
+
+    .card-image {
+        width: 110px;
+        height: 110px;
+        background-size: 110px 110px !important;
+    }
+
+    .times li {
+        font-size: 14px;
+    }
+
+    .modal {
+        width: 80%;
+    }
+
+    .modal-content {
+        width: 100%;
+    }
+
+    .modal-content p {
+        padding-left: 0;
+    }
+
+    .member-plan {
+        width: 100%;
+    }
+
+    .subscribe fieldset {
+        width: 90%;
+    }
+
+    form {
+        width: 300px !important;
+    }
+
+    .footer-text {
+        font-size: 15px;
+    }
+}
