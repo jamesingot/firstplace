@@ -2,17 +2,32 @@
 
 <div class="modal-container" id="class-spin">
     <div class="modal modal-medium">
-        <h2>Spin class details</h2>
+        <div class="modal-inner">
+            <h2>Spin class details</h2>
+            <p>Class Description</p>
+            <p>Who is running the class</p>
+            <p>A long paragraph describing details about the how the class is run and setup etc</p>
+        </div>    
     </div>
 </div>
 <div class="modal-container" id="class-yoga">
     <div class="modal modal-medium">
-        <h2>Yoga class details</h2>
+        <div class="modal-inner">
+            <h2>Yoga class details</h2>
+            <p>Class Description</p>
+            <p>Who is running the class</p>
+            <p>A long paragraph describing details about the how the class is run and setup etc</p>
+        </div>    
     </div>
 </div>
 <div class="modal-container" id="class-boxing">
     <div class="modal modal-medium">
-        <h2>boxing class details</h2>
+        <div class="modal-inner">
+            <h2>Boxing class details</h2>
+            <p>Class Description</p>
+            <p>Who is running the class</p>
+            <p>A long paragraph describing details about the how the class is run and setup etc</p>
+        </div> 
     </div>
 </div>
 <div class="modal-container" id="class-wod">

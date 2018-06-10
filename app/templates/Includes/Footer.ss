@@ -10,9 +10,8 @@
 			<% include Navigation %>
 		</div>
 		<div class="footer-inner">
-			<div class="social-inner"></div>
-			<div class="social-inner"></div>
-			<div class="social-inner"></div>
+			<a href="#" class="fa fa-facebook"></a>
+			<a href="#" class="fa fa-twitter"></a>
 		</div>
 		<div class="footer-inner">
 			<p>Firstplace Fitness 2018<a href="http://ingot.nz"> | site by ingot</a>

@@ -247,3 +247,26 @@ address {
   display: block;
   margin-bottom: 20px;
 }
+
+/* MATERIAL iCONS
+-------------------------------------------- */
+.material-icons.md-36 { 
+  font-size: 36px; 
+}
+
+/* SOCIAL MEDIA iCONS
+-------------------------------------------- */
+.fa {
+  padding: 12px;
+  font-size: 20px;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  background: #A9F043;
+  border-radius: 50%;
+  color: white !important;
+}
+.fa:hover {
+  opacity: 0.7;
+}
+

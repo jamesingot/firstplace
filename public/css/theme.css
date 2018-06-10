@@ -16,6 +16,26 @@
     font-style: normal;
 }
 
+@keyframes slideUpFromBottom {
+    0% {
+        transform: translateY(200%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/*=== Logo ===*/
+
+.site-logo {
+    height: 84px;
+    width: 224px;
+    background: url(../images/Logo.png);
+    background-size: 224px 84px;
+    background-position: center;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
 
 /*=== Trial ===*/
 
@@ -73,6 +93,7 @@
     color: white;
     width: 100%;
     font-family: 'Sonder';
+    animation: 1s ease-out 0s 1 slideUpFromBottom;
 }
 
 .page-banner-inner {
@@ -104,6 +125,14 @@
     width: 100%;
     z-index: 10;
     position: absolute;
+    opacity: 0.5;
+}
+
+.banner-overlay {
+    background: black;
+    height: 600px;
+    width: 100%;
+    z-index: 2;
     opacity: 0.5;
 }
 
@@ -325,10 +354,6 @@
 	transition: 0.3s;
 }
 
-.modal fieldset {
-    padding-top: 24px;
-}
-
 /*=== Classes ===*/
 
 .classes {
@@ -390,110 +415,13 @@
 }
 
 .class-icon {
-    width: 40px;
-    height: 40px;
+    width: 56px;
+    height: 56px;
     margin: 0 auto;
-    margin-top: 10px;
+    margin-top: 2px;
+    margin-bottom: 2px;
     background-position: center;
-    background-size: 40px 40px !important;
-}
-
-/*=== Modals ===*/
-
-.modal-container {
-    display: none;
-    z-index: 6;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    -webkit-animation-name: animate;
-    -webkit-animation-duration: 0.4s;
-    animation-name: animate;
-    animation-duration: 0.4s;
-}
-
-.modal-container {
-    background: rgba(0,0,0,.5);
-    position: fixed;
-    top: 0;
-}
-
-.modal {
-    border-radius: 8px;
-    width: 400px;
-    height: auto;
-    background-color: #fff;
-    display: inline-block;
-    margin-top: 200px;
-    text-align: center;
-    padding: 24px;
-}
-
-.modal-medium {
-    margin-top: 100px;
-    width: 600px;
-    height: 500px;
-}
-
-.modal-large {
-    width: 80%;
-    height: 600px;
-    margin-top: 200px;
-}
-
-.modal-inner {
-    display: inline-block;
-    padding-top: 40px;
-}
-
-.modal h2, .modal h4 {
-    font-family: 'Sonder';
-    color: #A9F043;
-}
-
-.modal h2 {
-    font-size: 36px;
-}
-
-.modal h4 {
-    font-size: 20px;
-}
-
-.modal-content p {
-    text-transform: uppercase;
-    font-size: 16px;
-    text-align: left;
-    padding-left: 24px;
-}
-
-.modal-content {
-    float: left;
-    width: 75%;
-    padding-top: 24px;
-}
-
-.modal-image {
-    float: left;
-    width: 100px;
-    height: 100px;
-    margin-top: 24px;
-    background: #A9F043;
-    background-size: 100px !important;
-}
-
-@-webkit-keyframes animate {
-    from {opacity:0} 
-    to {opacity:1}
-}
-
-@keyframes animate {
-    from {opacity:0}
-    to {opacity:1}
-}
-
-.modal-button {
-    cursor: pointer;
+    background-size: 56px 56px !important;
 }
 
 /*== Subscribe ==*/
@@ -584,6 +512,7 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%,-50%);
+        animation: 0s ease-out 0s 0 slideUpFromBottom;
     }
 
     .banner-heading h1 {
@@ -595,13 +524,21 @@
 
 @media only screen and (max-width: 960px) {
 
+    .site-logo {
+        height: 63px;
+        width: 168px;
+        background-size: 168px 63px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+
     .page-banner h2 {
         font-size: 60px;
         letter-spacing: 10px;
     }
 
     .page-banner-inner {
-        height: auto;
+        height: 200px;
     }
 
     .class-card {
@@ -613,7 +550,7 @@
     }
 
     .class-table {
-        width: 1200px;
+        width: 720px;
     }
 
     .table-container {
@@ -654,12 +591,17 @@
         font-size: 60px;
         line-height: 70px;
     }
+
+    .page-banner-inner {
+        height: 156px;
+    }
 }
 
 @media only screen and (max-width: 480px) {
 
     .page-banner h2 {
-        font-size: 20px;
+        font-size: 36px;
+        letter-spacing: 4px;
     }
 
     .banner-heading h1 {
@@ -679,31 +621,24 @@
         font-size: 14px;
     }
 
-    .modal {
-        width: 80%;
-    }
-
-    .modal-content {
-        width: 100%;
-    }
-
-    .modal-content p {
-        padding-left: 0;
-    }
-
     .member-plan {
         width: 100%;
+    }
+
+    .member-plan-inner {
+        padding-bottom: 40px;
+        border-bottom: 1px solid #ECECEC;
     }
 
     .subscribe fieldset {
         width: 90%;
     }
 
-    form {
-        width: 300px !important;
-    }
-
     .footer-text {
         font-size: 15px;
+    }
+
+    .page-banner-inner {
+        height: 108px;
     }
 }

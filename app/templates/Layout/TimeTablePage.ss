@@ -145,4 +145,5 @@
         </div>
     </div>
     <% include classes %>
+    $Content
 </div>
