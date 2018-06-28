@@ -80,13 +80,22 @@
     background: #A9F043;
     background-size: 100px !important;
 }
-.modal-button {
+.modal-button,
+.modal-button-large {
     cursor: pointer;
 }
 
 .modal-large form {
     min-height: 400px;
     position: relative;
+}
+
+.modal-close {
+    width: 40px;
+    height: 40px;
+    float: right;
+    background: red;
+    cursor: pointer;
 }
 
 @-webkit-keyframes animate {

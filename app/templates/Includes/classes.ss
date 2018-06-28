@@ -1,6 +1,6 @@
 
 
-<div class="modal-container" id="class-spin">
+<div class="modal-container modal-no-close" id="class-spin">
     <div class="modal modal-medium">
         <div class="modal-inner">
             <h2>Spin class details</h2>
@@ -10,7 +10,7 @@
         </div>    
     </div>
 </div>
-<div class="modal-container" id="class-yoga">
+<div class="modal-container modal-no-close" id="class-yoga">
     <div class="modal modal-medium">
         <div class="modal-inner">
             <h2>Yoga class details</h2>
@@ -20,7 +20,7 @@
         </div>    
     </div>
 </div>
-<div class="modal-container" id="class-boxing">
+<div class="modal-container modal-no-close" id="class-boxing">
     <div class="modal modal-medium">
         <div class="modal-inner">
             <h2>Boxing class details</h2>
@@ -30,47 +30,47 @@
         </div> 
     </div>
 </div>
-<div class="modal-container" id="class-wod">
+<div class="modal-container modal-no-close" id="class-wod">
     <div class="modal modal-medium">
         <h2>wod class details</h2>
     </div>
 </div>
-<div class="modal-container" id="class-box-fit">
+<div class="modal-container modal-no-close" id="class-box-fit">
     <div class="modal modal-medium">
         <h2>box fit class details</h2>
     </div>
 </div>
-<div class="modal-container" id="class-kids">
+<div class="modal-container modal-no-close" id="class-kids">
     <div class="modal modal-medium">
         <h2>kids class details</h2>
     </div>
 </div>
-<div class="modal-container" id="class-core">
+<div class="modal-container modal-no-close" id="class-core">
     <div class="modal modal-medium">
         <h2>core class details</h2>
     </div>
 </div>
-<div class="modal-container" id="class-bats">
+<div class="modal-container modal-no-close" id="class-bats">
     <div class="modal modal-medium">
         <h2>bats class details</h2>
     </div>
 </div>
-<div class="modal-container" id="class-bodyblast">
+<div class="modal-container modal-no-close" id="class-bodyblast">
     <div class="modal modal-medium">
         <h2>Bodyblast class details</h2>
     </div>
 </div>
-<div class="modal-container" id="class-bootcamp">
+<div class="modal-container modal-no-close" id="class-bootcamp">
     <div class="modal modal-medium">
         <h2>Bootcamp class details</h2>
     </div>
 </div>
-<div class="modal-container" id="class-kickboxing">
+<div class="modal-container modal-no-close" id="class-kickboxing">
     <div class="modal modal-medium">
         <h2>Kickboxing class details</h2>
     </div>
 </div>
-<div class="modal-container" id="class-olympic">
+<div class="modal-container modal-no-close" id="class-olympic">
     <div class="modal modal-medium">
         <h2>Olympic class details</h2>
     </div>

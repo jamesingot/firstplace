@@ -2,8 +2,9 @@
     <!-- Modals -->
     <div class="modal-container modal-container-large" id="general-enquiry">
         <div class="modal modal-large">
+            <div class="modal-close"></div>
             <div class="modal-inner">
-                <h3>Please flick through a message!</h3>
+                <h2>Get in touch</h2>
                 $Form
             </div>
         </div>
@@ -15,22 +16,25 @@
             <div class="enquiry">
                 <div class="enquiry-inner">
                     <h3>General Enquiries</h3>
-                    <div class="modal-button enquiry-button" data-div="general-enquiry">Enquire ></div>
+                    <div class="modal-button-large enquiry-button" data-div="general-enquiry">Enquire ></div>
                 </div>
             </div>
             <div class="enquiry">
                 <div class="enquiry-inner">
                     <h3>Memberships and free trials</h3>
-                    <div class="modal-button enquiry-button">Enquire ></div>
+                    <div class="modal-button-large enquiry-button" data-div="general-enquiry">Enquire ></div>
                 </div>
             </div>
             <div class="enquiry">
                 <div class="enquiry-inner">
                     <h3>Personal Training</h3>
-                    <div class="modal-button enquiry-button">Enquire ></div>
+                    <div class="modal-button-large enquiry-button" data-div="general-enquiry">Enquire ></div>
                 </div>
             </div>
         </div>
     </div>
     <div id="map"></div>
+    <div class="content-inner"> 
+        $Content
+    </div>
 </div>

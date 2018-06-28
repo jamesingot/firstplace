@@ -4,14 +4,14 @@
         <div class="modal">
             <h2>Spin Class</h2>
             <h4>45 min</h4>
-            <div class="modal-image spin-image"></div>
+            <div class="modal-image modal-no-close spin-image"></div>
             <div class="modal-content">
                 <p>High intensity cardiovascular workout. Sprints and hillclimbs</p>
                 <p>Water and towel recommended!</p>
             </div>
         </div>
     </div>
-    <div class="modal-container" id="table-kids">
+    <div class="modal-container modal-no-close" id="table-kids">
         <div class="modal">
             <h2>Kids Class</h2>
             <h4>45 min</h4>
@@ -22,7 +22,7 @@
             </div>
         </div>
     </div>
-    <div class="modal-container" id="table-bootcamp">
+    <div class="modal-container modal-no-close" id="table-bootcamp">
         <div class="modal">
             <h2>Bootcamp Class</h2>
             <h4>45 min</h4>
@@ -33,7 +33,7 @@
             </div>
         </div>
     </div>
-    <div class="modal-container" id="table-boxfit">
+    <div class="modal-container modal-no-close" id="table-boxfit">
         <div class="modal">
             <h2>Box Fit Class</h2>
             <h4>45 min</h4>
