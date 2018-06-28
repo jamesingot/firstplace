@@ -91,10 +91,11 @@
 }
 
 .modal-close {
-    width: 40px;
-    height: 40px;
+    width: 24px;
+    height: 24px;
     float: right;
-    background: red;
+    background: url(../images/close.png);
+    background-size: 24px 24px;
     cursor: pointer;
 }
 
@@ -122,5 +123,8 @@
     }
     .modal-content p {
         padding-left: 0;
+    }
+    .modal h2 {
+        font-size: 24px;
     }
 }
