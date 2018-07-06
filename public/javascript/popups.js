@@ -24,6 +24,14 @@ jQuery.noConflict();
             });
             
         });
+
+        $(function() {
+            if ( $(window).width() < 960) {
+                $(".member-header").on("click",function() {
+                    $(this).next("div.member-content").toggle();
+                });
+            } 
+        });
     }); 
 
 

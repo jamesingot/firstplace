@@ -31,7 +31,7 @@ class ContactPageController extends PageController
     { 
         $email = new Email(); 
 
-        $email->setTo('siteowner@mysite.com'); 
+        $email->setTo('james@ingot.nz'); 
         $email->setFrom($data['Email']); 
         $email->setSubject("Contact Message from {$data["Name"]}"); 
 
@@ -42,8 +42,7 @@ class ContactPageController extends PageController
         $email->setBody($messageBody); 
         $email->send(); 
         return [
-            'Content' => '<p>Thank you for your feedback.</p>',
-            'Form' => ''
+            'Form' => 'Thank you for your message'
         ];
     }
 }

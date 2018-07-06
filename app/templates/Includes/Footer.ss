@@ -11,7 +11,7 @@
 		</div>
 		<div class="footer-inner">
 			<a href="#" class="fa fa-facebook"></a>
-			<a href="#" class="fa fa-twitter"></a>
+			<a href="#" class="fa fa-instagram"></a>
 		</div>
 		<div class="footer-inner">
 			<p>Firstplace Fitness 2018<a href="http://ingot.nz"> | site by ingot</a>

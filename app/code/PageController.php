@@ -27,7 +27,6 @@ class PageController extends ContentController
      *
      * @var array
      */
-    private static $allowed_actions = ['Submit'];
 
     protected function init()
     {
@@ -36,29 +35,33 @@ class PageController extends ContentController
         // See: https://docs.silverstripe.org/en/developer_guides/templates/requirements/
     }
 
+    private static $allowed_actions = ['SubscribeForm','Subscribe'];
     public function SubscribeForm() 
     { 
         $fields = new FieldList( 
             new EmailField('Email') 
         ); 
         $actions = new FieldList( 
-            new FormAction('submit', 'Subscribe') 
-        ); 
-        return new Form($this, 'Form', $fields, $actions); 
+            new FormAction('Subscribe', 'Subscribe') 
+        );
+        $validator = new RequiredFields('Email'); 
+        return new Form($this, 'Form', $fields, $actions, $validator); 
     }
 
-    public function submit($data, $subscribe) 
+    public function Subscribe($data, $form) 
     { 
         $email = new Email(); 
 
-        $email->setTo('siteowner@mysite.com'); 
+        $email->setTo('james@ingot.nz'); 
         $email->setFrom($data['Email']); 
         $email->setSubject("New subscriber"); 
 
-        $email->setBody("New Subscriber called {$data["Name"]}"); 
+        $messageBody = " 
+            <p><strong>Email:</strong> {$data['Email']}</p> 
+        "; 
+        $email->setBody($messageBody); 
         $email->send(); 
         return [
-            'Content' => '<p>Thank you for subscribing.</p>',
             'Form' => ''
         ];
     }
